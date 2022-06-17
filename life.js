@@ -1,3 +1,11 @@
+
+ function cartfun(){
+    console.log("abcdefghjh")
+    window.location.href="cart.html"
+}
+
+
+
 let newarrivalsDataLife=[
     {
         imgurl:"https://img.mytheresa.com/560/560/33/jpeg/catalog/product/73/P00678596_d2.jpg",

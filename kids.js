@@ -1,3 +1,9 @@
+
+ function cartfun(){
+    console.log("abcdefghjh")
+    window.location.href="cart.html"
+}
+
 let newarrivalsDataKid=[
 //  babygirl  
         {

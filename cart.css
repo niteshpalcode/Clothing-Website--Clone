@@ -1,0 +1,97 @@
+#pageMiddle>.pageMid{
+    text-align: center;
+    margin: auto;
+  }
+    #cartsection{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        justify-content: space-around;
+        /* border: 1px solid; */
+        align-items: center;
+        padding: 10px;
+    }
+    #cartimg{
+        width: 50%;
+    }
+    #amountdiv{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        
+
+    }
+    #inputquantity{
+        width: 20%;
+        text-align: center;
+    }
+   
+    .pageMidcart{
+        text-align: center;
+        margin: auto;
+    }
+
+    #cartcontainer{
+        width: 70%;
+        margin: auto;
+        border: 0px;
+    }
+    #checkoutnoard{
+        margin: auto;
+        width: 80%;
+    }
+    #totalprice{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    #checkoutbutton{
+        padding: 30px 50px;
+        font-size: 30px;
+        border: 0px;
+        background-color: teal;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    #checkoutbutton:hover{
+        background-color: darkgreen;
+    }
+    #cartsection{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        
+    }
+    #deletecartbut{
+        background-color: red;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 0px;
+        color: white;
+    }
+    #deletecartbut:hover{
+        background-color: coral;
+    }
+    #pricetag{
+        color: rgb(37, 92, 92);
+    }
+    #checkoutnoard{
+       
+        display: flex;
+        width: auto;
+        justify-content: space-evenly;
+    }
+    #checkoutnoard>#promo{
+        text-align: center;
+        margin: auto;
+        width: 40%;
+        font-size: 20px;
+    }
+    #checkoutnoard>#promo>input{
+        padding: 10px 30px;
+    }

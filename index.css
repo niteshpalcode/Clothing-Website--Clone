@@ -40,24 +40,28 @@ color: rgb(51, 174, 245);
     height: 80px;
     display: flex;
     gap: 180px;
-    /* border: 2px solid; */
     margin-bottom: 30px;
     margin: auto;
 }
-#pageMiddle{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    justify-content: flex-end;
-    padding: 10px 0px;
+.pageMid1{
+    width: 100%;
+    text-align: end;
+    margin-top: 10px;
 }
+.pageMid{
+    width: 40%;
+    text-align: end;
+}
+.pageMid1>img{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
 .pageMid>img{
-    width: 80%;
-    /* border: 1px solid; */
+    width: 10%;
 }
-#topPage>#pageMiddle>.pageMid>.shopping{
-    display: flex;
-}
+
 .accountHeader>p:hover{
     color: rgb(51, 174, 245);
 }
@@ -75,16 +79,17 @@ a{
     width: 80px 
 }
 #topPage>#pageBottom{
-    /* border: 1px solid; */
+
     display: flex;
+   
     width: 100%;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 .pageBot{
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
-    /* border: 1px solid; */
-    justify-content:flex-start;
+  
     gap: 20px;
     
 }

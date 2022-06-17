@@ -3,6 +3,10 @@
     console.log("abc")
     window.location.href="index.html"
 }
+function cartfun(){
+    console.log("abcdefghjh")
+    window.location.href="cart.html"
+}
 
 let newarrivalsData=[
     
@@ -1075,4 +1079,5 @@ let addedcart=JSON.parse(localStorage.getItem("addedcart"))||[]
 function addedcartfun(elem){
     addedcart.push(elem)
     localStorage.setItem("addedcart",JSON.stringify(addedcart))
+    alert("item Added Successfully")
 }

@@ -11,8 +11,14 @@
 @media all and (max-width: 720px) {
     #container{
       display: grid;
+      width: 100%;
+    
       
 
+    }
+    #categories{
+        display: none;
+        background-position: 0;
     }
     #pageBott{
         display: none;
@@ -122,6 +128,7 @@ margin-top: 10px;
     /* padding: 5px; */
 
 }
+
 
 #womenend{
     width: 90%;
