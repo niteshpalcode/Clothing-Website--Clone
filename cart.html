@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="women.css">
+    <style>
+        #cartsection{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            justify-content: space-around;
+            border: 1px solid;
+            align-items: center;
+        }
+        #cartimg{
+            width: 50%;
+        }
+        #amountdiv{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+            
+
+        }
+        #inputquantity{
+            width: 20%;
+            text-align: center;
+        }
+        .checkOutCard {
+  width: 100%;
+  margin: auto;
+  padding: 24px 8px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  gap: 22px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.checkout-totalbtn {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 24px;
+  border-radius: 16px;
+  border: none;
+  color: #e4002b;
+  font-size: 18px;
+}
+.checkout-t-item {
+  display: flex;
+  padding: 0px 24px;
+  gap: 20px;
+}
+.offer {
+  margin: auto;
+  display: flex;
+  padding: 12px 24px;
+  width: 75%;
+  background-color: #f8f7f5;
+  gap: 20px;
+  color: #e4002b;
+  border-radius: 12px;
+}
+.offer > p {
+  align-self: center;
+  white-space: nowrap;
+}
+.offer > button {
+  height: fit-content;
+  padding: 6px 16px;
+  border-radius: 12px;
+  border: 1px solid;
+  color: black;
+  background-color: white;
+  align-self: center;
+  white-space: nowrap;
+}
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+.gsttotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+.rtaxdiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+.hope {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.hope > p + p {
+  margin-left: 13px;
+  width: 90%;
+  margin-top: 8px;
+}
+    </style>
+</head>
+<body>
+    <div id="topPage">
+        <div id="pageHeader">
+            <div id="pageHeaderLeft">
+                <div class="headerContent"><p> <a href="women.html">WOMEN</p></a></div>
+                <div class="headerContent"><P> <a href="men.html"> MEN</a></P></div>
+                <div class="headerContent"><P> <a href="kids.html"> KIDS</a></P></div>
+                <div class="headerContent"><P> <a href="life.html"> LIFE</a></P></div>
+            </div>
+            <div id="pageHeaderRight">
+            <div class="accountHeader"><p>Signup for Newsletter</p></div>
+            <div class="accountHeader"><p><a href="account\account.html"> My Account</a></p></div>
+            <div class="accountHeader"><p>My Wishlist</p></div>
+            <div class="accountHeader"><p>English</p></div>
+            </div>
+        </div>
+
+        <div id="pageMiddle">
+            <div class="pageMid">
+                <img src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220608T143740" alt="Mytheresa">
+            </div>
+            <div class="pageMid">
+                <div class="shopping">
+                    <p>Shopping Bag</p>
+                    <span class="material-icons">shopping_bag</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="pageBottom">
+            <div class="pageBot">
+                <div class="pageBotCont1"><a href="women.html"><p>NEW ARRIVALS</p></a></div>
+                <div class="pageBotCont1"><a href="women.html"><p>DESIGNERS</p></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>CLOTHING</P></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>SHOES</P></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>BAGS</P></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>ACCESSORIES</P></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>JEWELRY</P></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>VACATION</P></a></div>
+                <div class="pageBotCont1"><a href="women.html"><P>SALE</P></a></div>
+            </div>
+            <div class="pageBott">
+                <input type="text" placeholder="Search Here!"></div>
+        </div>
+    </div>
+    <hr>
+
+
+    <div id="cartcontainer">
+
+    </div>
+    <hr>
+  <div id="checkoutnoard">
+    <h3>YOUR CURRENT PROMOTIONS</h3>
+    <p>Free shipping</p>
+  </div>
+  <hr>
+
+  <div id="checktotalamount">
+      <div>
+      <input type="search" placeholder="Enter Coupon Code Here!!!">
+      <input type="button" value="Use Code">
+  </div>
+  <div>
+        <p id="subtotalprice">Sub Total</p>
+        <h3></h3>
+        <p>VAT exception. VAT not included. Shipping not included.</p>
+        <button>Proceed To Checkout</button>
+  </div>
+</div>
+</body>
+</html>
+<script>
+    // appendingng cart details
+    let dibba=document.querySelector("#cartcontainer")
+    // calling the addedkey
+    let itemadded=JSON.parse(localStorage.getItem("addedcart"))||[]
+    // var finalCart = JSON.parse(localStorage.getItem('')) || [];
+    // let updatedeitem=JSON.parse(localStorage.getItem("updateditem"))||[]
+    // document.querySelector("#subtotalprice").innerText=carttotal
+    displaytablecart(itemadded)
+
+
+    
+
+    let prices=JSON.parse(localStorage.getItem("updatequant"))||1;
+    displayamount(prices)
+    function displayamount(prices){
+        let cartdiv=document.createElement("div")
+        let subtotaldiv=document.createElement("p")
+        subtotaldiv.innerText=prices
+        console.log(subtotaldiv)
+    }
+
+    function displaytablecart(itemadded){
+
+        itemadded.forEach(function(elem,index) {
+            // creating div for itemcard
+            let mainDiv=document.createElement("div")
+            mainDiv.id="cartsection"
+            // creaditing div for image
+            let imgdiv=document.createElement("div")
+            let imgdivapp=document.createElement("img")
+            imgdivapp.id="cartimg"
+            imgdivapp.setAttribute("src",elem.imgurl)
+            imgdiv.append(imgdivapp)
+
+            // div for name details
+            let detailsdiv=document.createElement("div")
+            let details=document.createElement("p")
+            details.innerText=elem.name
+            let details2=document.createElement("p")
+            details2.innerText=elem.name2
+            var removeItem = document.createElement('p');
+            removeItem.className = 'removeItem';
+            removeItem.innerText = 'Remove';
+            removeItem.style.textDecoration = 'underline';
+            removeItem.style.fontWeight = 'bold';
+            removeItem.addEventListener('click', function () {
+                remove(elem,index);
+            });
+            detailsdiv.append(details,details2, removeItem)
+
+            // amountdiv
+            let amountsection=document.createElement("div")
+            amountsection.id="amountdiv"
+            let pricediv=document.createElement("div")
+            let pricec=document.createElement("p")
+            pricec.innerText="€ "+Number(elem.price)
+            pricediv.append(pricec)
+
+            // creating input for quantity
+            let quantdiv=document.createElement("div")
+            let quantity=document.createElement("input")
+            quantity.id="inputquantity"
+            quantity.setAttribute("type","number")
+            quantity.setAttribute("placeholder",quantity.value)
+
+            let updatediv=document.createElement("button")
+            updatediv.innerText="Update"
+
+
+
+            updatediv.addEventListener("click",function(elem){
+                updatevalue(quantity)
+            })
+            quantdiv.append(quantity,updatediv)
+
+
+            let totaldiv=document.createElement("div")
+            let total=document.createElement("p")
+
+
+
+            
+            let getupdatevalue=JSON.parse(localStorage.getItem("updatequant"))
+            console.log(getupdatevalue)
+            let carttotal=(Number(elem.price))*Number(getupdatevalue)
+            console.log("cart total="+carttotal)
+            
+           
+
+            if(carttotal==false){
+            total.innerText=carttotal||"€"+" "+elem.price;
+            // document.querySelector("subtotalprice").innerText=elem.total
+            }
+            else{
+                total.innerText="€"+carttotal
+        
+            }
+            totaldiv.append(total)
+    
+            amountsection.append(pricediv,quantdiv,totaldiv)
+
+            
+            mainDiv.append(imgdiv,detailsdiv,amountsection)
+            dibba.append(mainDiv)
+
+
+        });
+
+    }
+
+// counter function 
+        function updatevalue (elem){
+            let updatedvalue=elem.value;
+            localStorage.setItem("updatequant",JSON.stringify(updatedvalue))
+            console.log(updatedvalue)
+            location.reload();
+        }
+
+
+function totalartcount() {
+    return 1;
+  }
+
+
+  function remove(ele, index) {
+    let mythCart= ele.price;
+    console.log(mythCart);
+    localStorage.setItem('mythCart', JSON.stringify(mythCart));
+    itemadded.splice(index, 1);
+    localStorage.setItem('addedcartremoved', JSON.stringify(mythCart));
+    window.location.reload();
+  }
+
+</script>

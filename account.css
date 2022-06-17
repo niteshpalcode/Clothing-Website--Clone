@@ -1,0 +1,177 @@
+#container{
+    margin: auto;
+    padding: 10px;
+}
+   #topPage{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#pageHeader{
+    width: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;
+    margin-bottom: 50px;
+}
+#pageMiddle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+a:link{
+    text-decoration: none;
+    list-style: none;
+}
+a:hover{
+    color: rgb(151, 204, 240);
+}
+a{
+    color: black;
+}
+#topPage>#pageHeader>#pageHeaderLeft{
+    display: flex;
+    height: 60px;
+    width: 20%;
+    /* border: 1px solid; */
+    justify-content: space-evenly;
+
+}
+#topPage>#pageHeader>#pageHeaderRight{
+    display: flex;
+    height: 60px;
+    width: 40%;
+    /* border: 1px solid; */
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+#topPage>#pageMiddle{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content:right;
+    gap: 180px;
+    margin: auto;
+    /* border: 1px solid; */
+    margin-bottom: 30px;
+}
+#topPage>#pageMiddle>.pageMid>.shopping{
+    display: flex;
+    
+}
+#topPage>#pageMiddle>.pageMid>.shopping>img{
+    width: 80px 
+}
+#topPage>#pageBottom{
+    /* border: 1px solid; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content:space-between ;
+}
+#topPage>#pageBottom>.pageBot{
+    display: flex;
+    width: 90%;
+    /* border: 1px solid; */
+    justify-content:flex-start;
+    gap: 20px;
+    color: rgb(85, 83, 83);
+}
+#topPage>#pageBottom>.pageBott>img{
+    width: 30%;
+}
+ 
+
+
+#accountPage{
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    
+}
+#signUppage{
+    /* border: 1px solid; */
+    /* background-color: burlywood; */
+    padding: 20px;
+}
+.firstText{
+    /* border: 1px solid; */
+    font-size: 26px;
+}
+#title{
+    border: 1px solid;
+    width:90%;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+#signupBAsicDetails>input{
+    border: 1px solid;
+    width:86%;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+#signupcheckBox{
+    width: 90%;
+}
+#signupcheckBox>p+p{
+    margin-top: -10px;
+}
+#signupbut{
+    background-color: rgb(235, 228, 217);
+    padding: 10px 25px;
+    border: 0px;
+}
+#signupbut:hover{
+    background-color: rgb(134, 168, 168);
+}
+#signinPage{
+    border-left: 1px solid;
+    /* background-color: cadetblue; */
+    padding: 20px 30px ;
+}
+.siginDetails{
+    margin-top: 20PX;
+}
+.siginDetails>input{
+    width: 86%;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+.siginDetails>input:focus-visible{
+    background-color: rgb(183, 209, 241);
+}
+.signinfinal{
+    margin-top: 10px;
+    width: 88%;
+}
+#login{
+    padding: 8px 25px;
+    border: 0px solid;
+    background-color: black;
+    color: white;
+}
+
+#bottomLast{
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+dd{
+    margin-top: 10px;
+}
+

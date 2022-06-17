@@ -1,0 +1,141 @@
+#container{
+    width: 50%;
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: auto;
+
+}
+@media all and (max-width: 720px) {
+    #container{
+      display: grid;
+      
+
+    }
+    #pageBott{
+        display: none;
+    }
+    #pageBotCont1{
+        display: none;
+    }
+    #pageBotCont2{
+        display: none;
+    }
+    #pageBotCont3{
+        display: none;
+    }
+    #pageBotCont4{
+        display: none;
+    }
+    #pageBotCont5{
+        display: none;
+    }
+    #pageBotCont6{
+        display: none;
+    }
+    #pageBotCont7{
+        display: none;
+    }
+    #pageBotCont8{
+        display: none;
+    }
+    .pageBotCont1{
+        display: none;
+    }
+    
+}
+#carddiv{
+    width: 100%;
+    margin: auto;
+
+}
+#pricetag{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+#firstname{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+#secondname{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.picSize{
+    width: 40%;
+}
+#cartbutton{
+    background-color: rgb(18, 61, 66);
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+}
+#cartbutton:hover{
+    background-color: darkgoldenrod;
+}
+#womenMain{
+    /* border: 1px solid; */
+    width: 90%;
+    height: auto;
+    display: flex;
+    
+    margin: auto;
+
+}
+
+#womentop{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 13rem;
+    justify-content: flex-end;
+}
+#categories{
+    width: 20%;
+    /* border: 1px solid; */
+
+}
+#catTop{
+    /* border: 1px solid; */
+    padding-left: 10px
+}
+#catMid{
+    padding-left: 10px;
+    margin-top: 30px;
+}
+#catDesigner{
+
+    padding-left: 10px;
+}
+#catDesigner>input{
+margin-top: 10px;
+}
+#container{
+   
+    width: 80%;
+    height: 1500px;
+    line-height: 3em; 
+    overflow:scroll;
+    /* border: thin #000 solid; */
+    /* padding: 5px; */
+
+}
+
+#womenend{
+    width: 90%;
+    display:flex ;
+    margin: auto;
+}
+#img1>img{
+    width: 100%;
+}
+#img2>img{
+    width: 100%;
+}
+#badadibba{
+    width: 90%;
+    padding: 10px 35px 20px 35px;
+    margin: auto;
+}

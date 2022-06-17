@@ -1,0 +1,270 @@
+#container{
+    /* border: 2px solid; */
+    width: 90%;
+    padding: 10px 35px 20px 35px;
+    margin: auto;
+}
+#topPage{
+    height: auto;
+    width: 100%;
+    /* border: 5px solid; */
+}
+#pageHeader{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.headerContent:hover{
+color: rgb(51, 174, 245);
+}
+#topPage>#pageHeader>#pageHeaderLeft{
+    display: flex;
+    height: 60px;
+    width: 20%;
+    /* border: 1px solid; */
+    justify-content: space-between;
+
+}
+#topPage>#pageHeader>#pageHeaderRight{
+    display: flex;
+    height: 60px;
+    width: 40%;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#topPage>#pageMiddle{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 180px;
+    /* border: 2px solid; */
+    margin-bottom: 30px;
+    margin: auto;
+}
+#pageMiddle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    justify-content: flex-end;
+    padding: 10px 0px;
+}
+.pageMid>img{
+    width: 80%;
+    /* border: 1px solid; */
+}
+#topPage>#pageMiddle>.pageMid>.shopping{
+    display: flex;
+}
+.accountHeader>p:hover{
+    color: rgb(51, 174, 245);
+}
+a:link{
+    text-decoration: none;
+    list-style: none;
+}
+ a:hover{
+    color: rgb(51, 174, 245);
+ }
+a{
+    color: black;
+}
+#topPage>#pageMiddle>.pageMid>.shopping>img{
+    width: 80px 
+}
+#topPage>#pageBottom{
+    /* border: 1px solid; */
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+.pageBot{
+    display: flex;
+    width: 90%;
+    /* border: 1px solid; */
+    justify-content:flex-start;
+    gap: 20px;
+    
+}
+#topPage>#pageBottom>.pageBott>img{
+    width: 30%;
+}
+ 
+#midPage1{   
+    /* border: 1px solid; */
+    margin: auto;
+    
+}
+#midPage1>div{
+    margin: auto;
+    /* border: 1px solid; */
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+#midPage1>div>img{
+    /* border: 1px solid; */
+    width: 100%;
+}
+#midPage1>div>button{
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+.material-icons{
+    width: 100%;
+    /* border: 1px solid; */
+}
+#midPage2{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto; 
+    
+}
+#typeOfCollection{
+    width: 100%;
+ 
+}
+#typeOfCollection1{
+    width: 100%;
+
+}
+.collectionImage>img{
+    width: 100%;
+}
+#midPage3{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+.collectionHeading{
+    text-align: center;
+    text-size-adjust: 30px;
+}
+#typeOfCollection1{
+    display:grid ;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2,auto);
+}
+.collectionButton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}  
+#bottomFirst{
+    margin: auto;
+    width: 100%;
+    /* border: 1px solid; */
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+#bottomFirst>.bottomText{
+    text-align: center;
+    /* border: 1px solid;    */
+    padding-top: 20px;
+}
+#bottomFirst>.bottomContent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    margin: auto;
+    /* border: 1px solid; */
+    text-align: center;
+    
+}
+.bottomContentImage>img{
+    width: 90%;
+}
+.collectionButton{
+    text-align: center;
+}
+.collectionButton>button{
+    padding: 9px 18px;
+    background-color: black;
+    color: white;
+}
+#bottomSecond>.bottomSecondContent>h4{
+    margin: auto;
+    width: 60%;
+    /* border: 1px solid; */
+    text-align: center;
+    margin-top: 20px;
+}
+#bottomSecond>.bottomSecondContent>p{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+#bottomSecondContent1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    width: 80%;
+    margin: auto;
+    gap: 10px
+}
+#bottomSecondContent12{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+#bottomLast{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+dd{
+margin-top: 10px;
+}
+@media all and (max-width: 720px){
+    .pageBottom{
+        display: none
+    }
+    #bottomLast{
+        display: none
+    }
+    #nextpage{
+        display: none
+    }
+    #womenMain{
+        display: none
+    }
+    
+    #catMid{
+        display: none
+    }
+    #catDesigner{
+        display: none
+    }
+    #catTop{
+        display: none
+    }
+    #container{
+        width: 100%
+    }
+    #pageMiddle{
+        width: 90%;
+        margin: auto;
+    }
+    .pageMid1>img{
+        width: 100%
+    }
+    
+   
+};

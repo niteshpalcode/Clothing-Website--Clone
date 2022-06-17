@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css" />
+    <link rel="stylesheet" href="women.css">
+</head>
+<body>
+    <div id="badadibba">
+    <!-- top page -->
+    <div id="topPage">
+        <div id="pageHeader">
+            <div id="pageHeaderLeft">
+                <div class="headerContent"><p> <a href="women.html">WOMEN</p></a></div>
+                <div class="headerContent"><P> <a href="menindex.html"> MEN</a></P></div>
+                <div class="headerContent"><P> <a href="kids.html"> KIDS</a></P></div>
+                <div class="headerContent"><P> <a href="life.html"> LIFE</a></P></div>
+            </div>
+            <div id="pageHeaderRight">
+            <div class="accountHeader"><p>Signup for Newsletter</p></div>
+            <div class="accountHeader"><p><a href="account.html"> My Account</a></p></div>
+            <div class="accountHeader"><p>My Wishlist</p></div>
+            <div class="accountHeader"><p>English</p></div>
+            </div>
+        </div>
+
+    <div id="pageMiddle">
+        <div class="pageMid1">
+            <img onclick="indexfun()" src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220608T143740" alt="Mytheresa">
+        </div>
+        <div class="pageMid">
+            <div class="shopping">
+               <img src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="pageBottom">
+        <div class="pageBot">
+            <div id="pageBotCont1"><p>NEW ARRIVALS</p></a></div>
+            <div id="pageBotCont2"><p>DESIGNERS</p></a></div>
+            <div id="pageBotCont3"><P>CLOTHING</P></a></div>
+            <div id="pageBotCont4"><P>SHOES</P></a></div>
+            <div id="pageBotCont5"><P>BAGS</P></a></div>
+            <div id="pageBotCont6"><P>ACCESSORIES</P></a></div>
+            <div id="pageBotCont7"><P>JEWELRY</P></a></div>
+            <div id="pageBotCont8"><P>VACATION</P></a></div>
+            <div class="pageBotCont1"><P>SALE</P></a></div>
+        </div>
+        <div class="pageBott">
+            <input type="text" placeholder="Search Here!"></div>
+    </div>
+</div>
+    <hr>
+<!-- account page -->
+    <div id="accountPage">
+        <!-- sign up page -->
+        <div id="signUppage">
+            <form id="signupForm">
+                <div class="signupdivText">
+                    <p class="firstText">CREATE AN ACCOUNT</p>
+                    <p>Please enter the following information to create your account.</p>
+                </div>
+                <div id="userTilte">
+                    <li>
+                    <input type="radio" name="Ms" id="ms">
+                    <label for="prefix_Ms.">Ms.</label>
+                    
+                    <input type="radio" name="Mrs" id="mrs">
+                    <label for="prefix_Mrs.">Mrs.</label>
+    
+                    <input type="radio" name="Mr" id="Mr">
+                    <label for="prefix_Mr.">Mr.</label>
+    
+                </li>
+                </div>
+                <div id="userAcTitle">
+                    <select type="suffix" name="suffix" title="Academic title" id="title">
+                    <option> Academic title</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                    <option value="Prof. Dr.">Prof. Dr.</option>
+                  </select>
+                </div>  
+                        
+                    <div id="signupBAsicDetails">
+                        <input type="text" id="signupName1" placeholder="First Name">
+                        <br>
+                        <input type="text" id="signupName2" placeholder="Last Name">
+                        <br>
+                        <input type="email" id="signupEmail" placeholder="Email Address">
+                        <br>
+                        <input type="password" id="password1" placeholder="password">
+                        <br>
+                        <input type="password" id="password2" placeholder="Confirm password">
+                        <br>
+    
+                    </div>
+                
+                    <div id="signupcheckBox">
+                        <input type="checkbox" id="signupTick">
+                        <p> From now on I will receive the Mytheresa Newsletter with selected fashion offers. If I do not wish to receive the newsletter, I can unsubscribe at any time free of charge at privacy@mytheresa.com.</p>
+                        <p>I agree that Mytheresa may insert analytical web beacons into the newsletter and create a personalized user profile based on my purchase and usage behavior, including sending a notification when I have placed something in the shopping cart. 
+                            Further details can be found in our Privacy Policy, clause 5. 
+                            I understand that I can revoke my consent at any time by emailing privacy@mytheresa.com.
+                        </p>
+                        <br>
+                        <p>* Required Field</p>
+  
+                    </div>
+                    <div id="signupRegister">
+                        <input type="submit" value="Register" id="signupbut">
+                    </div>
+                
+                
+            </form>
+        </div>
+        <!-- sign in page -->
+        <div id="signinPage">
+            <form id="signInPage">
+            <div id="siginDetailsText">
+                <div class="siginText">
+                    <p class="firstText">ALREADY REGISTER</p>
+                </div>
+                <div class="siginText1">
+                    <p>If you have an account with us, please log in.</p>
+                </div>   
+            </div>          
+                <div class="siginDetails">
+                    <input type="email" name="email" id="siginEmail" placeholder="Email Address*">
+                    <br>
+                    <input type="password" name="passwrod" id="siginPassword" placeholder="Password*">
+                </div>
+                <div class="signinfinal">
+                    <p>* Required Fields</p>
+                    <h4> <u> Forget Password</u></h4>
+                    <p>At Mytheresa, we keep your information secure. As a result, it will be necessary for you to log in to your account before you are able to place an order or change the information on your account. You will be asked to log in to complete your order even if you have already been greeted on the website.</p>
+                </div>
+                <div id="siginLogin">
+                    <input type="submit" value="Login" id="login">
+                </div>
+            
+    
+            </form>
+        </div>
+        
+    </div>
+<hr>
+    <!-- bottom page -->
+
+    <div id="bottomLast">
+        <div class="bottomLast">
+            <ul>
+            <dd><p> SERVICE & SECURITY</p></dd>
+
+            <dd>Fast Delivery</dd>
+            <dd>Delivery within 2 business days</dd>
+            <dd>Free returns within 30 days</dd>
+            <dd>Convenient return service</dd>
+            
+            <dd>Secure payment and data protection</dd>
+            <dd>SSL encryption for secure transaction and personal data</dd>
+        </ul>
+        </div>
+        <div class="bottomLast">
+
+            
+            <ul>
+            <dd><p> MYTHERESA</p></dd>
+            <dd>About Us</dd>
+            <dd>Trust & Services</dd>
+            <dd>Sustainabilty</dd>
+            <dd>Press</dd>
+            <dd>Career</dd>
+            <dd>Inverstor Relation </dd>
+            <dd>Affilates</dd>
+            </ul>
+        </div>
+        <div class="bottomLast">
+            
+            
+            <ul>
+            <dd><p> CUSTOMER CARE</p></dd>
+            <dd>Contact us</dd>
+            <dd>Shipping information</dd>
+            <dd>Secure Payment</dd>
+            <dd>Exchanges</dd>
+            <dd>Returns</dd>
+            <dd>After sale service </dd>
+            <dd>Gift card</dd>
+        </ul>
+        </div>
+        <div class="bottomLast">
+            
+            
+            <ul>
+                <dd><p>GET TREND UPDATES, STYLE TIPS AND MORE</p> </dd>
+                <input type="search" name="" id="searchbottom" placeholder="Enetr your Email Address">
+                <dd>Wish list</dd>
+                <dd>Receive personal notification </dd>
+                <dd>Follow us on</dd>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="account.js"></script>
