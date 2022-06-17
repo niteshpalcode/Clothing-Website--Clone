@@ -79,6 +79,7 @@ let data={
 if (checksignindata(data.email,data.password)==true){
     localStorage.setItem("siginKey",JSON.stringify(data))
     alert("sign In successflly")
+    window.location.href="index.html"
 
 }
 else{
